@@ -1,3 +1,5 @@
+
+import pandas_datareader as pdr
 import streamlit as st
 import datetime as dt
 from PIL import Image
@@ -25,7 +27,20 @@ side = st.sidebar
 side.header("Input Details")
 crypto_ticker = side.text_input("Input cryptocurrency ticker")
 currency_ticker = side.text_input("Input currency ticker")
-year = side.text_input("Input year")
-month = side.text_input("Input month")
-day = side.text_input("Input day")
+start_date = side.date_input("Select date to start analysis")
+end_date = side.date_input("Select date to end analysis")
+
+#function to get data
+def fetch_data(ticker, currency, start_date, end_date):
+    """function to fetch cryptocurrency data"""
+    scraped_data = pdr.DataReaser(f"{ticker}-{currency}","yahoo", start_date,end_date)
+    return scraped_data
+
+if side.button("fetch data"):
+    data = fetch_data(crypto_ticker, currency_ticker, start_date, end_date)
+    st.success("Data successfully scraped")
 #....................................................#
+
+#....................................................#
+#display data
+
