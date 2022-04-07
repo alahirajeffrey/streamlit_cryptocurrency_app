@@ -8,8 +8,8 @@ This web app scrapes yfinance for the price of a selected cryptocurrency and plo
 - [streamlit](https://streamlit.io/) streamlit is an open source python web framework that turns data scripts into shareable web apps in minutes. All in pure Python. No front‑end experience required
 
 ## How to use
-- Download and install [python](https://www.python.org/)
-- Download and install git on your local machine [git](https://git-scm.com/downloads)
+- Download and install [python](https://www.python.org/) on your machine
+- Download and install [git](https://git-scm.com/downloads) on your local machine
 - Clone repository using `git clone https://github.com/alahirajeffrey/streamlit_cryptocurrency_app.git`
 - Install requirements by running `pip install -r requirements.txt`
 - After installation, open a terminal and navigate to the project folder
