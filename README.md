@@ -1,6 +1,6 @@
 # streamlit_cryptocurrency_app
 
-This web app scrapes yfinance for the price of a selected cryptocurrency and plots the price trends . This project was inspired by my increasing interests in cryptocurrencies
+This web app scrapes yfinance for the price of a selected cryptocurrency and plots the price trends . This project was inspired by my increasing interest in cryptocurrencies
 
 ## Requirements
 - [python](https://www.python.org/) Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small- and large-scale projects 
@@ -8,7 +8,13 @@ This web app scrapes yfinance for the price of a selected cryptocurrency and plo
 - [streamlit](https://streamlit.io/) streamlit is an open source python web framework that turns data scripts into shareable web apps in minutes. All in pure Python. No front‑end experience required
 
 ## How to use
-click the link to use the app: https://streamlit-cryptocurrency-app.herokuapp.com/
+- Download and install [python](https://www.python.org/)
+- Download and install git on your local machine [git](https://git-scm.com/downloads)
+- Clone repository using `git clone https://github.com/alahirajeffrey/streamlit_cryptocurrency_app.git`
+- Install requirements by running `pip install -r requirements.txt`
+- After installation, open a terminal and navigate to the project folder
+- Run the program using `streamlit run src/app.py`
+- After the program starts, fill in the required fields and run
 
 ## Author
 * [Alahira Jeffrey](https://github.com/alahirajeffrey)
